@@ -51,7 +51,7 @@
             <version>5.0.9</version>
         </dependency>
 
-        <!-- ✅ Add Lombok (required for annotations to work during compile time) -->
+        <!-- ✅ Lombok for annotation-based boilerplate code -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -62,7 +62,7 @@
 
     <build>
         <plugins>
-            <!-- ✅ Add maven-compiler-plugin with --add-opens for Java 17+ compatibility -->
+            <!-- ✅ Maven compiler plugin for Java 17 compatibility -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -101,6 +101,7 @@
             </build>
         </profile>
 
+        <!-- Profile to run Cucumber TestNG Runner -->
         <profile>
             <id>CucumberTests</id>
             <build>
